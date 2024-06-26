@@ -10,5 +10,15 @@ let studentProfile = {
 let additionalHobbies = ["Painting", "Yoga"];
 
 // Start coding here
+//Declare new variable to add 
+let updatedHobbie = [
+  ...studentProfile.hobbies,
+  ...additionalHobbies
+];
+
+let newStudentProfile = {
+  ...studentProfile,
+  hobbies : updatedHobbie //assign value to hobbies
+}
 
 console.log(newStudentProfile);
